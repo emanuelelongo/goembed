@@ -2,6 +2,12 @@
 
 Embed static resources in a Go program
 
+## Install
+
+```
+go get github.com/emanuelelongo/goembed
+```
+
 ## Usage
 
 ``` bash
@@ -22,6 +28,10 @@ goembed [options] file|directory
 ## Example
 
 ``` bash
+# given the following "myIcons" directory:
+# ├── green.png
+# ├── orange.png
+# └── red.png
 $ goembed --prefix statusIcon myIcons > myFile.go
 ```
 Will write into `myFile.go`:
